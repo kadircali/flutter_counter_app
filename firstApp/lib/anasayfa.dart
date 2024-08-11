@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:ilk_fluttet_projem/anasayfa.dart';
+import 'package:ilk_fluttet_projem/text.dart';
 
-class AnaSayfa extends StatelessWidget {
-  const AnaSayfa({super.key});
+import 'anasayfa2.dart';
+import 'circleAvatar.dart';
+import 'columnd_row.dart';
+import 'container.dart';
+import 'elevatedButton.dart';
+import 'image.dart';
+
+void main() {
+  runApp(AnaUygulama());
+}
+
+class AnaUygulama extends StatelessWidget {
+  const AnaUygulama({super.key});
 
   @override
   Widget build(BuildContext context) {
-    int counter = 0;
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-        centerTitle: true,
-        title: Text("first app"),
-      ),
-      backgroundColor: Colors.grey,
-      floatingActionButton:
-          FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
-      body: Center(
-        child: Text(
-          "counter: $counter ",
-          style: TextStyle(fontSize: 30),
-        ),
-      ),
+    return MaterialApp(
+      title: "ilk flutter app",
+      home: ElevatedButtonTest(),
     );
   }
 }
